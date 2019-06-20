@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context="com.e.qrscanner.CaptureImageActivity">
+    <ImageView
+        android:id="@+id/capturedImage"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+         />
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/capturedImage"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorGreen"
+        android:onClick="launchCamera"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:text="Capture Barcodes"
+        android:textColor="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/decodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captureButton"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorGreen"
+        android:onClick="decodeQrcode"
+        android:padding="10dp"
+        android:text="Decode Barcodes"
+        android:textColor="@color/colorBlack" />
+
+
+</RelativeLayout>
